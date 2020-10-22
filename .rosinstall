@@ -5,11 +5,11 @@
 - git:
     local-name: drl_local_planner_forks/pedsim
     uri: https://github.com/FranklinBF/drl_girls_pedsim.git
-    version: rl_features
+    version: with_boost
 - git:
     local-name: drl_local_planner_forks/navigation
     uri: https://github.com/RGring/navigation.git
-    version: with_boost
+    version: flatland_integration
 - git:
     local-name: drl_local_planner_forks/stable-baselines
     uri: https://github.com/RGring/stable-baselines.git
