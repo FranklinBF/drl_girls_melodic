@@ -1,3 +1,33 @@
+#Franklin's Note for girl's old repository:
+
+### in folder: flatland
+#### replace
+CV_LOAD_IMAGE_GRAYSCALE
+#### to
+cv::IMREAD_GRAYSCALE
+
+
+
+### in folder: pedsim
+#### replace
+shared_ptr
+#### to
+boost:: shared_ptr
+
+#### replace
+const function<void (boost:: shared_ptr
+#### to
+const boost:: function<void (boost:: shared_ptr
+
+### install baseline
+cd <path_to_catkin_ws>/src/drl_local_planner_forks/stable_baselines/
+workon arenapy3
+pip install -e .
+
+# in folder: ws_drl_my/src/drl_local_planner_forks/flatland/flatland_plugins/include/flatland_plugins
+
+"-std=c++11" is not enough , add #include<bits/stdc++.h>
+
 # What is this repository for?
 * Setup to train a local planner with reinforcement learning approaches from [stable baselines](https://github.com/hill-a/stable-baselines) integrated ROS
 * Training in a simulator fusion of [Flatland](https://github.com/avidbots/flatland) and [pedsim_ros](https://github.com/srl-freiburg/pedsim_ros)
